@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>slaider</title>
+        <link rel="stylesheet" href="html.css">
+    </head>
+    <body>
+        <ul id="slider">
+            <li class="slide active">
+                <img src="https://obovsem.pp.ua/wp-content/uploads/kotiki-31.jpg">
+            </li>
+            
+            <li class="slide active">
+                <img src="https://avatars.mds.yandex.net/get-zen_doc/1662927/pub_5cfa1f8683e84200af3e0cae_5cff5fd4253cb300aec68c92/scale_1200">
+            </li>
+            <li class="slide">
+                <img src="https://lh3.googleusercontent.com/proxy/e01aBKLanvJkU7yNYmHO6s-RHz5NbatAADTC2ie7eaHfAaBkCobnEt35SWAOcv42WpIzEYo3WpPtdBCTMpociW01eQgDvHyWF2pu9GrAuB8c1YbYTFxxE5tk50bbzWuUcA">
+            </li>
+            <li class="slide">
+                <img src="https://bipbap.ru/wp-content/uploads/2017/12/3bcf49273613bc88bc79040f08fd422008c52624.jpg">
+            </li>
+        </ul>
+        <div class="arrows">
+            <span class="arrow next" id="next">Вправо</span>
+            <span class="arrow prew" id="prew">Влево</span>
+        </div>
+        <div class="bg-wrapper">
+            <div class="bg-grad one active"></div>
+            <div class="bg-grad two"></div>
+            <div class="bg-grad three"></div>
+            <div class="bg-grad four"></div>
+            <div class="bg-grad five"></div>
+            <div class="bg-grad six"></div>
+            <div class="bg-grad sax"></div>
+        </div>
+        <script src="html.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                var transTime = 5000;
+                var numBgColors = $('.bg-grad').length;
+                var bgtrans = setInterval(function() {
+                    if ($('.bg-grad.active').index() == ($('.bg-grad').length - 1)) {
+                        $('.bg-grad.active').removeClass('active');
+                        $('.bg-grad').eq(0).addClass('active');
+                    } else {
+                        var curIndex = $('.bg-grad.active').index();
+                        $('.bg-grad.active').removeClass('active');
+                        $('.bg-grad').eq(curIndex + 1).addClass('active');
+                    }
+                }, transTime);
+            });
+        </script>
+    </body>
+</html>

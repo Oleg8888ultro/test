@@ -1,0 +1,106 @@
+/*body {
+    background-image: url(https://clipart-db.ru/file_content/rastr/flower_091.png)
+}*/
+#slider {
+    position: relative;
+    overflow: hidden;
+    width: 600px;
+    height: 320px;
+    margin: 20px auto;
+    padding: 0;
+    list-style: none;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease-in 0.1s;
+    left: 0;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.arrows {
+    position: relative;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.arrow {
+    position: absolute;
+    cursor: pointer;
+}
+
+.no_active {
+    color: red;
+}
+
+.next {
+    right: 0;
+}
+
+.bg-grad {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: opacity 5s linear;
+    transition: opacity 5s linear;
+    background-image: url(https://www.seekpng.com/png/detail/869-8699087_-.png);
+    background-color: #87f1099e;
+}
+
+.bg-grad.active {
+    opacity: 1;
+}
+
+/*.bg-grad.one {
+    background: #f17009;
+    background: -webkit-linear-gradient(30deg, #f17009 0%, #ee620d 24%, #f19109 74%, #f17009 100%);
+    background: linear-gradient(60deg, #f17009 0%, #ee620d 24%, #f19109 74%, #f17009 100%);
+}
+
+.bg-grad.two {
+    background: #f1093f;
+    background: -webkit-linear-gradient(30deg, #f1093f 0%, #ee0d2d 24%, #f10960 74%, #f1093f 100%);
+    background: linear-gradient(60deg, #f1093f 0%, #ee0d2d 24%, #f10960 74%, #f1093f 100%);
+}
+
+.bg-grad.three {
+    background: #a709f1;
+    background: -webkit-linear-gradient(30deg, #a709f1 0%, #8c09f1 24%, #d309f1 74%, #a709f1 100%);
+    background: linear-gradient(60deg, #a709f1 0%, #8c09f1 24%, #d309f1 74%, #a709f1 100%);*/
+}
+
+.bg-grad.four {
+     background-image: url(https://photoshop-kopona.com/uploads/posts/2018-02/1517861939_1.png);
+    /*background: #097bf1;
+    background: -webkit-linear-gradient(30deg, #097bf1 0%, #0971f1 24%, #09a2f1 74%, #097bf1 100%);
+    background: linear-gradient(60deg, #097bf1 0%, #0971f1 24%, #09a2f1 74%, #097bf1 100%);*/
+}
+
+.bg-grad.five {
+    background-image: url(http://pngimg.com/uploads/wedding/wedding_PNG19490.png);
+    /*background: #1eb65e;
+    background: -webkit-linear-gradient(30deg, #1eb65e 0%, #19a83e 24%, #1bcd66 74%, #1eb65e 100%);
+    background: linear-gradient(60deg, #1eb65e 0%, #19a83e 24%, #1bcd66 74%, #1eb65e 100%);*/
+}
+
+.bg-grad.six {
+     background-image: url(http://pngimg.com/uploads/wedding/wedding_PNG19493.png);
+   /* background: #ffc000;
+    background: -webkit-linear-gradient(30deg, #ffc000 0%, #ffa200 24%, #ffde00 74%, #ffc000 100%);
+    background: linear-gradient(60deg, #ffc000 0%, #ffa200 24%, #ffde00 74%, #ffc000 100%);*/
+}
+
+.bg-grad.sax {
+    background-image: url(https://clipart-db.ru/file_content/rastr/flower_091.png);
+    /*background: -webkit-linear-gradient(30deg,  0%,  24%,  74%,  100%);
+    background: linear-gradient(60deg,  0%,  24%,  74%,  100%);*/
+}
